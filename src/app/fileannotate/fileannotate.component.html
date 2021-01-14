@@ -1,0 +1,81 @@
+<B>file annotate</B>
+<!-- <input type="button" class="btn btn-primary" (click)="SelectFiletoRead()" value="Read file" />
+file path: {{filePath}}
+<br>
+<textarea name="message" rows="10" cols="30" [(ngModel)]="fileData"></textarea>
+
+<br>
+<input type="button" (click)="WriteFile()" value="Write file" /> -->
+
+<div class="row">
+    <div class="col">
+        <label for="file-path-txt">File</label>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="file-path-txt" [value]="filePath">
+            <div class="input-group-append">
+                <span class="input-group-text" (click)="SelectFiletoRead()">Browse</span>
+            </div>
+            <div class="input-group-append">
+                <span class="input-group-text" (click)="ReadSelectedFile()" >Read File</span>
+            </div>
+        </div>
+        <label for="sentence-txt">Sentence</label>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Previous</span>
+            </div>
+            <textarea class="form-control" id="sentence-txt" [(ngModel)]="fileData"></textarea>
+            <div class="input-group-append">
+                <span class="input-group-text">Next</span>
+            </div>
+        </div>
+        <div class="text-center mb-3">
+            <button type="button" class="btn btn-outline-primary mr-2"
+                title="Automatic named entity recognition">Automatic
+                NER</button>
+            <button type="button" class="btn  btn-outline-primary">NER OK</button>
+        </div>
+    </div>
+    <div class="col">
+        <label for="entity-pair">Entity pair</label>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Previous</span>
+            </div>
+            <input type="text" class="form-control" id="entity-pair" />
+            <div class="input-group-append">
+                <span class="input-group-text">Next</span>
+            </div>
+        </div>
+        <label for="relation-chkbox">Relations</label>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+                Default checkbox 1
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+            <label class="form-check-label" for="defaultCheck2">
+                Default checkbox 2
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+            <label class="form-check-label" for="defaultCheck3">
+                Default checkbox 3
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+            <label class="form-check-label" for="defaultCheck4">
+                Default checkbox 4
+            </label>
+        </div>
+        <div class="text-center mb-3">
+            <button type="button" class="btn btn-outline-primary mr-2"
+                title="Add tag">Add tag</button>
+            <button type="button" class="btn  btn-outline-primary" (click)="WriteFile()" >Save content</button>
+        </div>
+    </div>
+</div>

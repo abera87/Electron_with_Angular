@@ -30,3 +30,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Build and run electron
 use npm command (check package.jason script section, custom command added against electron key)
 npm run electron
+
+##screenshot of electron app
+![electron app acreenshot](https://github.com/abera87/Electron_with_Angular/blob/main/Output-Image/Screenshot.jpg?raw=true)
